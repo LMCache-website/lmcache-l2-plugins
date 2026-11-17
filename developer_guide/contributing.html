@@ -131,7 +131,8 @@ use this repository for backend-specific installation and operational details.</
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">lmcache_l2_plugins/&lt;name&gt;/</span></code>: plugin implementation and backend README.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">tests/&lt;name&gt;/</span></code>: plugin tests.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code>: backend dependencies in an extra named after the plugin.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">lmcache_l2_plugins/&lt;name&gt;/plugin.toml</span></code>: backend dependencies and verification
+declarations; packaging automatically generates the extra named after the plugin.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">docs/source/plugins/</span></code>: integration pages included in the Sphinx site.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">docs/design/&lt;name&gt;/</span></code>: design documents matching the plugin package path.</p></li>
 </ul>
