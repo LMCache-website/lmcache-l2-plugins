@@ -90,6 +90,9 @@
 </li>
 <li class="toctree-l1" x-data="{ expanded: $el.classList.contains('current') ? true : false }"><a :class="{ 'expanded' : expanded }" @click="expanded = !expanded" class="reference internal expandable" href="../developer_guide/index.html">Developer Guide<button @click.prevent.stop="expanded = !expanded" type="button"><span class="sr-only"></span><svg fill="currentColor" height="18px" stroke="none" viewbox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></button></a><ul x-show="expanded">
 <li class="toctree-l2"><a class="reference internal" href="../developer_guide/contributing.html">Contributing an Integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developer_guide/adding-a-plugin.html">Adding a plugin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developer_guide/publishing.html">Package publishing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developer_guide/e2e/index.html">Shared L2 server e2e</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../developer_guide/design-docs.html">Design Documents</a></li>
 </ul>
 </li>
@@ -251,6 +254,8 @@ append had not landed yet, which a cache can afford.</p>
 </section>
 <section id="tests">
 <h2>Tests<a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link to this element'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link to this element" href="#tests" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#tests'"><span>#</span></a></h2>
+<p>For the real-server CPU e2e against LMCache <code class="docutils literal notranslate"><span class="pre">dev</span></code>, including a verified L1
+clear and L2 readback, see <a class="reference external" href="https://github.com/LMCache/lmcache_l2_plugins/blob/main/docs/source/developer_guide/e2e/autumn.md">the e2e guide</a>.</p>
 <p>From the repository root:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><code><span id="line-1">pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span><span class="s2">".[autumn,test]"</span>
 </span><span id="line-2">pytest<span class="w"> </span>tests/autumn

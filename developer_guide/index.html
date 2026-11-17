@@ -90,6 +90,9 @@
 </li>
 <li class="toctree-l1 current" x-data="{ expanded: $el.classList.contains('current') ? true : false }"><a :class="{ 'expanded' : expanded }" @click="expanded = !expanded" class="current reference internal expandable" href="#">Developer Guide<button @click.prevent.stop="expanded = !expanded" type="button"><span class="sr-only"></span><svg fill="currentColor" height="18px" stroke="none" viewbox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></button></a><ul x-show="expanded">
 <li class="toctree-l2"><a class="reference internal" href="contributing.html">Contributing an Integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="adding-a-plugin.html">Adding a plugin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="publishing.html">Package publishing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="e2e/index.html">Shared L2 server e2e</a></li>
 <li class="toctree-l2"><a class="reference internal" href="design-docs.html">Design Documents</a></li>
 </ul>
 </li>
@@ -122,6 +125,27 @@
 <li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing an Integration</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="contributing.html#repository-layout">Repository layout</a></li>
 <li class="toctree-l2"><a class="reference internal" href="contributing.html#building-the-docs">Building the docs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="adding-a-plugin.html">Adding a plugin</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="adding-a-plugin.html#plugin-declaration">Plugin declaration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="adding-a-plugin.html#automatic-participation">Automatic participation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="adding-a-plugin.html#optional-real-server-e2e">Optional real-server e2e</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="publishing.html">Package publishing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="publishing.html#one-time-maintainer-setup">One-time maintainer setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="publishing.html#release">Release</a></li>
+<li class="toctree-l2"><a class="reference internal" href="publishing.html#install-a-pr-artifact">Install a PR artifact</a></li>
+<li class="toctree-l2"><a class="reference internal" href="publishing.html#reproduce-package-checks">Reproduce package checks</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="e2e/index.html">Shared L2 server e2e</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="e2e/index.html#layers">Layers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="e2e/index.html#prepare-a-native-python-environment">Prepare a native Python environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="e2e/index.html#add-an-l2-plugin">Add an L2 plugin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="e2e/index.html#ci-and-evidence">CI and evidence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="e2e/index.html#backend-guides">Backend guides</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="design-docs.html">Design Documents</a></li>
